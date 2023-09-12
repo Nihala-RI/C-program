@@ -1,0 +1,32 @@
+#include<stdio.h>  
+int main(){  
+int i,number;  
+int t1=0,t2=1,t3;
+t3=t1+t2;
+printf("Enter a number: ");    
+scanf("%d",&number);    
+for(i=1;i<=number;i++){
+    printf("\n%d",t3);
+    t1=t2;
+    t2=t3;
+    t3=t1+t2;
+    
+}    
+return 0;  
+}    
+
+
+
+output:
+
+Enter a number: 10
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89

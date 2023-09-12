@@ -1,0 +1,24 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+//void sum();
+void main() {
+    int a;
+    printf("-----------------------------------------------------------------\n");
+    printf("You can calculate the sum of two numbers here\n");
+    a=sum();
+    printf("Sum is %d",a);
+}
+int sum(){
+    int a,b;
+    printf("Enter the two numbers\n");
+    scanf("%d%d",&a,&b);
+    return a+b;
+}
+
+output:
+-----------------------------------------------------------------
+You can calculate the sum of two numbers here
+Enter the two numbers
+5
+5
+Sum is 10

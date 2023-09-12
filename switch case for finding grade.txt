@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+float main() {
+    float mark1,mark2,mark3,mark4,mark5;
+    float total,avg,Percentage;
+    printf("Enter the marks obtained in 5 subjects:\n");
+    scanf("%f%f%f%f%f",&mark1,&mark2,&mark3,&mark4,&mark5);
+    printf("Enter the total:\n");
+    scanf("%f",&total);
+    
+    //sum=mark1+mark2+mark3+mark4+mark5;
+    avg=(mark1+mark2+mark3+mark4+mark5)/5;
+    //printf("%f and %f",sum,avg);
+    Percentage=(avg/total)*100;
+    printf("%f",Percentage);
+    float a = Percentage; 
+    int b = (int) a; 
+    printf("%d",b);
+    
+    switch(b/10){
+       case 10 :
+       case 9 :
+           /* Marks between 90-100 */
+           printf("\n Your Grade is: A");
+           break;
+       case 8 :
+            /* Marks between 80-89 */
+           printf("\n Your Grade is: B" );
+           break;
+       case 7 :
+           /* Marks between 70-79 */
+           printf("\n Your Grade is: C" );
+           break;
+       case 6 :
+           /* Marks between 60-69 */
+           printf("\n Your Grade is: D" );
+           break;
+       case 5 :
+            /* Marks between 50-59 */
+           printf("\n Your Grade is: E" );
+           break;
+       case 4 :
+           /* Marks between 40-59 */
+           printf("\n Your Grade is: E--");
+           break;
+       default :
+           /* Marks less than 40 */
+           printf("\n You Grade is: F or Fail\n");
+    }
+    return 0;
+}
+
+output:
+Enter the marks obtained in 5 subjects:
+15
+16
+19
+20
+18
+Enter the total:
+20
+88.00000088
+ Your Grade is: B

@@ -1,0 +1,49 @@
+#include<stdio.h>  
+int main(){  
+int num,temp,rem,sum=0;
+
+printf("Enter a three digit number: ");    
+scanf("%d",&num);
+temp=num;
+while(num!=0){
+  rem=num%10;
+  sum=sum+(rem*rem*rem);
+  num=num/10;
+}
+if(sum==temp)
+    printf("%d is an Armstrong number",temp);
+else
+printf("Not an armstrong number");
+
+return 0;  
+} 
+
+
+
+or 
+
+
+#include<stdio.h>  
+int main(){  
+int num,temp,rem,sum=0;
+
+printf("Enter a three digit number: ");    
+scanf("%d",&num);
+
+for(temp=num;num!=0;num=num/10){
+    rem=num%10;
+    sum=sum+(rem*rem*rem);
+}
+if(sum==temp)
+    printf("%d is an Armstrong number",temp);
+else
+printf("Not an armstrong number");
+
+return 0;  
+}      
+
+
+output:
+
+Enter a three digit number: 153
+153 is an Armstrong number

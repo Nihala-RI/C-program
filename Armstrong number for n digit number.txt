@@ -1,0 +1,33 @@
+#include<stdio.h>  
+void main(){  
+int num,temp,n=0,orgnum,rem,sum=0;
+
+printf("Enter the number: ");    
+scanf("%d",&num);
+
+temp=num;
+
+while(temp!=0){
+    temp/=10;
+    n++;
+}
+printf("%d is the number of digits\n",n);
+printf("%d\n",num);
+
+for(orgnum=num;num!=0;num=num/10){
+    rem=num%10;
+    sum=sum+pow(rem,n);
+}
+if(sum==orgnum)
+    printf("%d is an Armstrong number",orgnum);
+else
+printf("Not an armstrong number");
+
+}   
+
+output
+
+Enter the number: 153
+3 is the number of digits
+153
+153 is an Armstrong number

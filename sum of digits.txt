@@ -1,0 +1,21 @@
+#include<stdio.h>  
+void main(){  
+int num,temp,rem,sum=0;
+
+printf("Enter the number: ");    
+scanf("%d",&num);
+
+temp=num;
+for(temp=num;num!=0;num/=10){
+    rem=num%10;
+    sum=sum+rem;
+}   
+printf("sum of the digits of the given number is %d",sum);
+}    
+
+
+
+output
+
+Enter the number: 523
+sum of the digits of the given number is 10
